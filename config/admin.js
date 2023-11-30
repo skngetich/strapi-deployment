@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+  url: "/dashboard",
   auth: {
     secret: env('ADMIN_JWT_SECRET'),
   },
@@ -14,4 +15,4 @@ module.exports = ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
-});
+  });
